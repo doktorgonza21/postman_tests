@@ -31,6 +31,7 @@ jobs:
         continue-on-error: true
         run: |
           newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export testResults/index.html
+      # Deploy    
       - name: Deploy to pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3.7.3
