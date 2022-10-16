@@ -9,3 +9,5 @@
 3. Run **npm run tern-on-api** to start local server<br>
 4. Open postman and import **NEW.postman.collection.json**<br>
 5. Run collection from postman
+
+Open **https://doktorgonza21.github.io/postman_tests/** to see report
