@@ -28,7 +28,7 @@ jobs:
 
       # Run the POSTMAN collection
       - name: Run POSTMAN collection
-        if: failure()
+        continue-on-error: true
         run: |
           newman run petstore.collection.json -r cli,htmlextra --reporter-htmlextra-export testResults/index.html
       - name: Deploy to pages
